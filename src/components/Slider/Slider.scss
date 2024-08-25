@@ -1,0 +1,45 @@
+.slider {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  .container {
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+
+    img {
+      width: 100vw;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .icons {
+    width: fit-content;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    gap: 40px;
+    margin: auto; // center horizontal
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #999;
+      background-color: #99999986;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .icon:active {
+      background-color: #999;
+    }
+  }
+}
